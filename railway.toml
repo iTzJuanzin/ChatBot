@@ -1,4 +1,0 @@
-[build]
-builder = "nixpkgs/nodejs"
-buildCommand = "npm install"
-startCommand = "npm start"
