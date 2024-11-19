@@ -9,6 +9,9 @@ const {
 } = require("whatsapp-web.js"); // Mudança Buttons
 const client = new Client({
   authStrategy: new LocalAuth(),
+  puppeteer: {
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  },
 });
 // serviço de leitura do qr code
 client.on("qr", (qr) => {
